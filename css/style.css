@@ -1,0 +1,324 @@
+html { overflow: hidden; }
+body { font-family: 'Open Sans', sans-serif; line-height: .8; font-size: 45px; }
+
+.background {
+	position: fixed;
+	height: 100%;
+	width: 100%;
+	background: -moz-radial-gradient(50% 50%, farthest-side, #fff, #efefef);
+	background: -webkit-gradient(radial, 50% 50%, 250, 50% 50%, 750, from(#fff), to(#efefef));
+	z-index: 0;
+    opacity: 1;
+}
+
+#hint {
+    z-index: 9999;
+    position: fixed; top: 0; left: 20px;
+    font-size: 16px;
+    background: #ddd;
+    color: #666;
+    padding: 6px 12px 12px;
+    font-style: italic;
+    opacity: 0;
+    border-radius: 0 0 10px 10px;
+    
+    -webkit-transition: opacity 2s;
+    -moz-transition:    opacity 2s;
+    -ms-transition:     opacity 2s;
+    -o-transition:      opacity 2s;
+    transition:         opacity 2s;
+    
+    -webkit-transition-delay: 6s;
+    -moz-transition-delay: 6s;
+    -ms-transition-delay: 6s;
+    -o-transition-delay: 6s;
+    transition-delay: 6s;
+}
+
+#hint a { text-decoration: underline; font-style: italic; }
+
+#hint:hover {
+    opacity: 1;
+    -webkit-transition: opacity .25s;
+    -moz-transition:    opacity .25s;
+    -ms-transition:     opacity .25s;
+    -o-transition:      opacity .25s;
+    transition:         opacity .25s;
+}
+
+a, a:hover, a:visited {
+    text-decoration: none;
+    font-style: normal;
+    color: #666;
+    cursor: pointer;
+}
+a:hover { color: #333;}
+
+/*.title { font-size: 275px; }*/
+.title { font-size: 214px; }
+.big { text-transform: uppercase; margin: 0; padding: 0; }
+.bold { font-weight: 800; }
+.light { font-weight: 400; }
+.extralight { font-weight: 300; letter-spacing: .1em; }
+.small { display: block; padding: 20px; font-size: 20px; font-weight: 600; }
+
+blockquote {
+    text-align: justify;
+    font-weight: 300;
+    font-style: italic;
+    line-height: 1.4;
+}
+
+blockquote .author {
+    display: block;
+    text-align: right;
+    padding: 10px 40px;
+    font-weight: 600;
+    font-size: 36px;
+}
+
+.img-wrap {	margin: 0 auto; }
+.img-inline { display: inline-block; padding: 12px 3px; }
+.img-link {	text-decoration: none; }
+.img-border { border: solid 1px #aaa; }
+
+.simbolo {
+    position: absolute;    
+    box-sizing: border-box;
+    min-width: 130px;
+    min-height: 50px;
+    padding: 10px;
+
+    background: #88bfe8; /* Old browsers */
+    /* IE9 SVG, needs conditional override of 'filter' to 'none' 
+    background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iIzg4YmZlOCIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiM3MGIwZTAiIHN0b3Atb3BhY2l0eT0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
+    background: -moz-linear-gradient(top,  #88bfe8 0%, #70b0e0 100%); /* FF3.6+ 
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#88bfe8), color-stop(100%,#70b0e0)); /* Chrome,Safari4+ 
+    background: -webkit-linear-gradient(top,  #88bfe8 0%,#70b0e0 100%); /* Chrome10+,Safari5.1+ 
+    background: -o-linear-gradient(top,  #88bfe8 0%,#70b0e0 100%); /* Opera 11.10+ 
+    background: -ms-linear-gradient(top,  #88bfe8 0%,#70b0e0 100%); /* IE10+ 
+    background: linear-gradient(to bottom,  #88bfe8 0%,#70b0e0 100%); /* W3C 
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#88bfe8', endColorstr='#70b0e0',GradientType=0 ); /* IE6-8 */
+}
+.simbolo p { margin: 4px 0 0 0; font-size: 24px; }
+.circulo { border-radius: 50%; }
+.oval {}
+.oval .circulo-inicio { display: block; position: absolute; width: 50px; height: 50px; min-width: 0; top: 0 !important; left: -18px; border-radius: 50%; }
+.oval .circulo-fim { display: block; position: absolute; width: 50px; height: 50px; min-width: 0; top: 0 !important; right: -18px; border-radius: 50%; }
+.retangulo {}
+.losango {-webkit-transform: rotateZ(45deg); min-width: 70px;min-height: 70px;}
+.losango p {position: absolute; -webkit-transform: rotateZ(-45deg);}
+.linha {position: absolute; min-width: 150px; border-width: 2px; border-color: #777; }
+.linha p {position: absolute;margin:0;padding: 4px;font-size: 14px;background-color: white;}
+.seta {position: absolute;width: 7px;height: 7px;-webkit-transform: rotateZ(45deg);}
+.seta-cima {border-left: 2px solid #777;border-top: 2px solid #777;}
+.seta-dir {right: 0; border-top: 2px solid #777;border-right: 2px solid #777;}
+.seta-esq {left: 0; border-left: 2px solid #777;border-bottom: 2px solid #777;}
+.seta-baixo {bottom: 0; border-right: 2px solid #777;border-bottom: 2px solid #777;}
+
+/* COMMON STEP STYLES */
+
+.step {
+    text-align: center;
+    width: 1000px;
+    padding: 20px;
+
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing:    border-box;
+    -ms-box-sizing:     border-box;
+    -o-box-sizing:      border-box;
+    box-sizing:         border-box;
+    
+    -webkit-transition: opacity 1s;
+    -moz-transition:    opacity 1s;
+    -ms-transition:     opacity 1s;
+    -o-transition:      opacity 1s;
+    transition:         opacity 1s;
+    
+    text-shadow: rgba(0,0,0,.01) 0 0 1px; /* Chrome @font-face anti-aliasing fix */
+}
+
+.step:not(.active) { opacity: 0.1; }
+
+
+/* STEP SPECIFIC STYLES */
+#title {width: 1240px; height: 600px; text-align: left; }
+#title-text1 { font-size: 132px; }
+#title-text2 { font-size: 72px; }
+
+#agenda-2, #agenda-3 {padding: 0;}
+
+#agenda-definicao { font-size: 174px; }
+#agenda-explicacao { font-size: 83px; }
+#agenda-simbologia { font-size: 140px; }
+#agenda-exemplo { font-size: 221px; }
+
+#definicao-que {font-size: 202px;}
+
+#combo-text { font-size: 247px; }
+#combo-or { position: relative; left: -20px; }
+#combo-fluid-fixed div { float: left; text-align: center; }
+#combo-plus { width: 10%; font-size: 100px; }
+#combo-fixed, #combo-fluid { width: 45%; }
+#combo-fluid-fixed div .bold { font-size: 63px; width: 100%; }
+#combo-fluid-fixed div .light { font-size: 50px; width: 100%; }
+#combo-fluid .light { letter-spacing: 3px; }
+
+#pronto-e-isso { font-size: 270px; }
+#pronto-ta-entendendo { letter-spacing: 19px; font-size: 73px; position: relative; left: 10px; margin-top: 15px; }
+#pronto-hein { margin-top: 50px; font-size: 94px; }
+
+#como-forma { font-size: 69px; padding-bottom: 10px; position: relative; left: 3px; }
+#como-pratica { font-size: 162px; margin-top: 10px; }
+
+#explicacao { height: 600px; }
+.explicacao-text { position: absolute; width: 960px; top: 50px; text-align: center; opacity: 0; }
+
+#explicacao-simbolos-geometricos {position: relative; height: 80px; top: 250px; }
+#explicacao-simbolos-geometricos .simbolo, #explicacao-simbolos-geometricos .linha { top: 0; opacity: 0; }
+#explicacao-simbolos-simbolo-oval { left: 520px; top: 80px !important; height: 70px;}
+#explicacao-simbolos-simbolo-oval .circulo-inicio, #explicacao-simbolos-simbolo-oval .circulo-fim { width: 70px; height: 70px;}
+#explicacao-simbolos-simbolo-oval .circulo-inicio{ left: -12px;}
+#explicacao-simbolos-simbolo-oval .circulo-fim { right: -12px;}
+#explicacao-simbolos-simbolo-retangulo { left: 320px; top: 80px !important; height: 70px;}
+#explicacao-simbolos-simbolo-losango {left: 435px;top: -70px !important;width: 100px;height: 100px;}
+#explicacao-simbolos-simbolo-linha1 {min-width: 0; width: 80px; height: 116px;left: 332px;top: 33px !important; border-left-style: solid;border-top: none;border-bottom-style: solid;}
+#explicacao-simbolos-simbolo-linha1 .seta {left: -5.5px;}
+#explicacao-simbolos-simbolo-linha2 {min-width: 0; width: 80px; height: 116px;left: 556px;top: 33px !important; border-right-style: solid;border-top: none;border-bottom-style: solid;}
+#explicacao-simbolos-simbolo-linha2 .seta {right: -5.5px;}
+#explicacao-diagrama {position: absolute; width: 100%; top: 200px; opacity: 1;}
+#explicacao-diagrama .simbolo, #explicacao-diagrama .linha { top: 0; opacity: 0; }
+#explicacao-diagrama .linha {min-width: 0;}
+#explicacao-diagrama-simbolo-inicio {left: 45px;}
+#explicacao-diagrama-simbolo-retangulo1 {left: 290px; }
+#explicacao-diagrama-simbolo-losango { width: 90px; height: 90px; left: 585px; top: 178px !important; margin-left: -45px;}
+#explicacao-diagrama-simbolo-losango p { left: 0; top: 30%; }
+#explicacao-diagrama-simbolo-retangulo2 {left: 520px;}
+#explicacao-diagrama-simbolo-fim {left: 785px; top: 196px !important;}
+#explicacao-diagrama .linha1 {width: 95px;left: 192px;top: 24px;border-top-style: solid;}
+#explicacao-diagrama .linha1 .seta {top: -5.5px;}
+#explicacao-diagrama .linha2 {width: 162px; height: 173px;left: 355px;top: 49px; border-left-style: solid; border-bottom-style: solid;}
+#explicacao-diagrama .linha2 .seta {bottom: -5.5px;}
+#explicacao-diagrama .linha3 {height: 108px; left: 584px;top: 53px;border-left-style: solid;}
+#explicacao-diagrama .linha3 p {left: 1px;top: 42px;}
+#explicacao-diagrama .linha3 .seta {left: -5.5px;}
+#explicacao-diagrama .linha4 {width: 116px;left: 648px;top: 222px;border-top-style: solid;}
+#explicacao-diagrama .linha4 p {top: -12px;left: 60px;}
+#explicacao-diagrama .linha4 .seta {top: -5.5px;}
+#explicacao-diagrama .linha5 {width: 200px; height: 166px;left: 650px;top: 25px; border-right-style: solid; border-top-style: solid;}
+#explicacao-diagrama .linha5 .seta {right: -5.5px;}
+#explicacao-aprofundar { font-size: 74px; }
+#explicacao-aprofundar a { font-size: 60px; }
+
+.active #explicacao-conjunto { -webkit-animation: explicacao-conjunto 3s ease-out 1s; }
+.active #explicacao-interligados { -webkit-animation: explicacao-interligados 3s ease-out 4s; }
+.active #explicacao-sequencia-logica { -webkit-animation: explicacao-sequencia-logica 3s ease-out 7s; }
+
+.active #explicacao-simbolos-simbolo-oval { -webkit-animation: explicacao-simbolos-simbolo-oval 5.8s ease-out 1s; }
+.active #explicacao-simbolos-simbolo-retangulo { -webkit-animation: explicacao-simbolos-simbolo-retangulo 5.8s ease-out 1s; }
+.active #explicacao-simbolos-simbolo-losango {-webkit-animation: explicacao-simbolos-simbolo-losango 5.8s ease-out 1s;}
+.active #explicacao-simbolos-simbolo-linha1, 
+.active #explicacao-simbolos-simbolo-linha2 {-webkit-animation: explicacao-simbolos-simbolo-linha 2.6s ease-out 4.2s;}
+
+.active #explicacao-diagrama-simbolo-inicio { -webkit-animation: explicacao-diagrama-simbolo-inicio 6s ease-out 8.5s; }
+.active #explicacao-diagrama-simbolo-inicio .simbolo { -webkit-animation: explicacao-diagrama-simbolo-inicio-simbolo 6s ease-out 8.5s; }
+.active #explicacao-diagrama-simbolo-fim { -webkit-animation: explicacao-diagrama-simbolo-fim 6s ease-out 9s; }
+.active #explicacao-diagrama-simbolo-fim .simbolo { -webkit-animation: explicacao-diagrama-simbolo-fim-simbolo 6s ease-out 9s; }
+.active #explicacao-diagrama-simbolo-retangulo1 { -webkit-animation: explicacao-diagrama-simbolo-retangulo1 4.8s ease-out 9.5s; }
+.active #explicacao-diagrama-simbolo-retangulo2 { -webkit-animation: explicacao-diagrama-simbolo-retangulo2 5s ease-out 9.6s; }
+.active #explicacao-diagrama-simbolo-losango {-webkit-animation: explicacao-diagrama-simbolo-losango 4.8s ease-out 9.7s;}
+.active #explicacao-diagrama .linha1 {-webkit-animation: explicacao-diagrama-simbolo-linha1 4.2s ease-out 10s;}
+.active #explicacao-diagrama .linha2 {-webkit-animation: explicacao-diagrama-simbolo-linha2 4.3s ease-out 10.1s;}
+.active #explicacao-diagrama .linha3 {-webkit-animation: explicacao-diagrama-simbolo-linha3 4.2s ease-out 10.2s;}
+.active #explicacao-diagrama .linha4 {-webkit-animation: explicacao-diagrama-simbolo-linha4 4.2s ease-out 10.3s;}
+.active #explicacao-diagrama .linha5 {-webkit-animation: explicacao-diagrama-simbolo-linha5 4.2s ease-out 10.4s;}
+
+#simbologia-titulo {font-size: 146px;}
+#simbologia-oval-figura {position: relative;width: 270px;height: 120px;left: 50%;margin-left: -145px;}
+#simbologia-oval-figura .simbolo {height: 120px;width: 120px;}
+#simbologia-oval-figura .circulo-inicio {left: -60px;} 
+#simbologia-oval-figura .circulo-fim {right: -60px;}
+#simbologia-oval-titulo { margin-top: 100px; font-size: 91px; }
+#simbologia-oval-definicao { font-size: 30px; padding-top: 10px; }
+#simbologia-retangulo-figura {position: relative;width: 270px;height: 120px;left: 50%;margin-left: -145px;}
+#simbologia-retangulo-titulo { margin-top: 100px; font-size: 102px; }
+#simbologia-retangulo-definicao { font-size: 46px; padding-top: 10px; }
+#simbologia-losango-figura {position: relative;width: 180px;height: 180px;left: 50%;margin-left: -98px;}
+#simbologia-losango-titulo { margin-top: 100px; font-size: 88px; }
+#simbologia-losango-definicao { font-size: 25px; padding-top: 10px; }
+#simbologia-linha-figura {position:relative; width:240px; left:50%; margin-left:-120px; border-top: 6px solid #777;}
+#simbologia-linha-figura .seta { top: -9.5px; border-width: 6px; border-color:#777; }
+#simbologia-linha-titulo { margin-top: 100px; font-size: 88px; }
+#simbologia-linha-definicao { font-size: 35px; padding-top: 10px; }
+
+#exemplo {font-size: 200px;}
+#exemplo-titulo > div {font-size: 53px;}
+#exemplo-diagrama { display: -webkit-box; width: 1000px; height: 630px;  }
+#exemplo-diagrama section { position: relative; -webkit-box-flex: 1; margin-right: 2px; -webkit-transition: all 300ms ease-out; }
+#exemplo-diagrama section h2 { position: absolute; width: 100%; margin:0; padding: 10px 0; font-size: 22px; text-align: center; background-color: #eee; }
+#exemplo-diagrama section .simbolo { min-width:80px; min-height: 40px; -webkit-transition: all 300ms; }
+#exemplo-diagrama section .simbolo p { margin: 3px 0 0 0; font-size: 14px; text-align: center; }
+#exemplo-diagrama section .circulo-inicio,
+#exemplo-diagrama section .circulo-fim { min-width: 40px; min-height: 40px; }
+#exemplo-diagrama section .linha { z-index: -1; }
+#exemplo-diagrama section .linha p { background-color: rgba(1,1,1,.1); }
+
+#exemplo-diagrama section:hover {background-color: rgba(1,1,1,.1);}
+#exemplo-diagrama section:hover h2 {font-weight: bold; background-color: #ccc;}
+#exemplo-diagrama .simbolo:hover, 
+#exemplo-diagrama .simbolo:hover .circulo-inicio, 
+#exemplo-diagrama .simbolo:hover .circulo-fim { cursor: pointer; background: #ffa84c; }
+#exemplo-diagrama .simbolo:hover p {text-shadow: 0 0 2px gray;}
+
+#exemplo-time-desenvolvimento {}
+#exemplo-diagrama-inicio { left: 123px; top: 60px; }
+#exemplo-diagrama-inicio .circulo-inicio,
+#exemplo-diagrama-inicio .circulo-fim { width:31px; height:31px; }
+#exemplo-diagrama .linha1 {border-left-style:solid; min-width:0; height:29px; left:162px; top:100px;}
+#exemplo-diagrama .linha1 .seta {left: -5.5px;}
+#exemplo-requisicao-teste {left: 98px;top: 132px;}
+#exemplo-diagrama .linha2 {border-top-style: solid; width: 167px; left: 226px;top: 151px;}
+#exemplo-diagrama .linha2 .seta {top: -5.5px;}
+#exemplo-release-aprovado {height: 80px;left: 123px;top: 386px;}
+#exemplo-release-aprovado p {top: 23px;left: -3px;}
+#exemplo-diagrama .linha7 {width: 511px; height: 0; left: 219px; top: 425px; border-top-style: solid;}
+#exemplo-diagrama .linha7 .seta {top: -5.8px;}
+#exemplo-diagrama .linha7 p {left: 261px; top: -25px;}
+#exemplo-diagrama .linha8 {min-width: 0;height: 42px;left: 162px;top: 483px;border-left-style: solid;}
+#exemplo-diagrama .linha8 .seta {left: -5.8px;}
+#exemplo-diagrama .linha8 p {left: 6px; top: 7px;}
+#exemplo-corrigir-defeitos {left: 98px;top: 528px;}
+#exemplo-diagrama .linha9 {width: 710px;height: 29px;left: 228px;top: 518px;border-bottom-style: solid;border-right-style: solid;border-bottom-right-radius: 4px;}
+#exemplo-diagrama .linha10 {width: 843px;height: 479px; left:95px; top:50px; border-right-style:solid; border-top-style:solid; border-top-right-radius:4px;}
+#exemplo-diagrama .linha11 {min-width:0; width:44px; height:98px; left:50px; top:50px; 
+                            border-top-style:solid; border-left-style:solid; border-bottom-style:solid; 
+                            border-top-left-radius:4px; border-bottom-left-radius:4px;}
+#exemplo-diagrama .linha11 .seta {bottom: -5.5px;}
+
+#exemplo-time-teste {}
+#exemplo-ciclo-execucao {left: 76px;top: 132px;}
+#exemplo-diagrama .linha3 {border-left-style: solid;min-width: 0;height: 35px;left: 162px;top: 172px;}
+#exemplo-diagrama .linha3 .seta {left: -5.8px;}
+#exemplo-executar-teste {left: 105px;top: 210px;}
+#exemplo-diagrama .linha4 {border-left-style: solid;min-width: 0;height: 39px;left: 162px;top: 250px;}
+#exemplo-diagrama .linha4 .seta {left: -5.8px;}
+#exemplo-enviar-relatorio {left: 101px;top: 292px;}
+#exemplo-diagrama .linha5 {height:14px; left:13px; top:332px; border-right-style:solid; border-bottom-style:solid; border-bottom-right-radius: 4px;}
+#exemplo-diagrama .linha6 {width: 183px; height:19px; left:-158px; top:346px; border-left-style:solid; border-top-style:solid; border-top-left-radius: 4px;}
+#exemplo-diagrama .linha6 .seta {left: -5.8px;}
+
+
+#exemplo-time-configuracao {}
+#exemplo-integrar-release {left: 93px;top: 406px;}
+#exemplo-diagrama .linha12 {min-width: 0; height: 27px; left: 158px; top: 446px; border-left-style: solid; border-top-style: solid; border-top-left-radius: 4px;}
+#exemplo-diagrama .linha12 .seta {left: -5.5px;}
+#exemplo-diagrama-fim {left: 120px;top: 478px;}
+#exemplo-diagrama-fim .circulo-inicio,
+#exemplo-diagrama-fim .circulo-fim { width:31px; height:31px; }
+
+#credits { width: 1200px; padding: 0; }
+#credits .big { font-size: 150px; }
+#credits p { font-style: italic; font-size: 30px; margin: 24px; padding: 0; color: #666; }
+#credits p.first { margin-bottom: 45px; font-size: 40px; }
+#credits a { font-style: italic; font-weight: bold; text-decoration: underline; }
+
