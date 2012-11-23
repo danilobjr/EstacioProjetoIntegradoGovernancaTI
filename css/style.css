@@ -143,15 +143,18 @@ blockquote .author {
 
 /* STEP SPECIFIC STYLES */
 #title {width: 1240px; height: 600px; text-align: left; }
-#title-text1 { font-size: 132px; }
-#title-text2 { font-size: 72px; }
+#title-governanca { font-size: 108px; }
+#title-tecnologia { font-size: 115px; }
+#title-informacao { font-size: 135px; }
 
-#agenda-2, #agenda-3 {padding: 0;}
+/*#agenda-2, #agenda-3 {padding: 0;}*/
 
-#agenda-definicao { font-size: 174px; }
-#agenda-explicacao { font-size: 83px; }
-#agenda-simbologia { font-size: 140px; }
-#agenda-exemplo { font-size: 221px; }
+#agenda-conceitos { font-size: 166px; }
+#agenda-organizacao { font-size: 123px; }
+#agenda-levantamento { font-size: 123px; }
+#agenda-plano { font-size: 150px; }
+#agenda-acao { font-size: 300px; }
+#agenda-consideracoes { font-size: 106px; }
 
 #definicao-que {font-size: 202px;}
 
