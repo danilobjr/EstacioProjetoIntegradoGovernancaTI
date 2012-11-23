@@ -114,7 +114,10 @@ blockquote .author {
 .seta-cima {border-left: 2px solid #777;border-top: 2px solid #777;}
 .seta-dir {right: 0; border-top: 2px solid #777;border-right: 2px solid #777;}
 .seta-esq {left: 0; border-left: 2px solid #777;border-bottom: 2px solid #777;}
-.seta-baixo {bottom: 0; border-right: 2px solid #777;border-bottom: 2px solid #777;}
+/*.seta-baixo {bottom: 0; border-right: 2px solid #777;border-bottom: 2px solid #777;}*/
+
+.seta-baixo {margin-top:180px;}
+.definicao-icon {margin-left:130px;}
 
 /* COMMON STEP STYLES */
 
@@ -157,6 +160,9 @@ blockquote .author {
 #agenda-consideracoes { font-size: 106px; }
 
 #definicao-que {font-size: 202px;}
+#definicao-governanca-titulo {font-size: 84px;}
+
+#definicao-cobit-titulo {font-size: 170px;}
 
 #combo-text { font-size: 247px; }
 #combo-or { position: relative; left: -20px; }
