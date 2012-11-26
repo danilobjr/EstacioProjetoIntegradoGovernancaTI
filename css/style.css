@@ -197,70 +197,25 @@ blockquote .author {
 #resultados-ds-titulo { margin-top: 100px; font-size: 88px; }
 #resultados-me-titulo { margin-top: 100px; font-size: 88px; }
 
-#exemplo {font-size: 200px;}
-#exemplo-titulo > div {font-size: 53px;}
-#exemplo-diagrama { display: -webkit-box; width: 1000px; height: 630px;  }
-#exemplo-diagrama section { position: relative; -webkit-box-flex: 1; margin-right: 2px; -webkit-transition: all 300ms ease-out; }
-#exemplo-diagrama section h2 { position: absolute; width: 100%; margin:0; padding: 10px 0; font-size: 22px; text-align: center; background-color: #eee; }
-#exemplo-diagrama section .simbolo { min-width:80px; min-height: 40px; -webkit-transition: all 300ms; }
-#exemplo-diagrama section .simbolo p { margin: 3px 0 0 0; font-size: 14px; text-align: center; }
-#exemplo-diagrama section .circulo-inicio,
-#exemplo-diagrama section .circulo-fim { min-width: 40px; min-height: 40px; }
-#exemplo-diagrama section .linha { z-index: -1; }
-#exemplo-diagrama section .linha p { background-color: rgba(1,1,1,.1); }
+#plano-acao {font-size: 148px;}
+#plano-acao span {float:left;}
+#plano-acao-de {margin-top:50px;font-size:30px;}
+#plano-acao-dominio > div {font-size: 60px;}
 
-#exemplo-diagrama section:hover {background-color: rgba(1,1,1,.1);}
-#exemplo-diagrama section:hover h2 {font-weight: bold; background-color: #ccc;}
-#exemplo-diagrama .simbolo:hover, 
-#exemplo-diagrama .simbolo:hover .circulo-inicio, 
-#exemplo-diagrama .simbolo:hover .circulo-fim { cursor: pointer; background: #ffa84c; }
-#exemplo-diagrama .simbolo:hover p {text-shadow: 0 0 2px gray;}
-
-#exemplo-time-desenvolvimento {}
-#exemplo-diagrama-inicio { left: 123px; top: 60px; }
-#exemplo-diagrama-inicio .circulo-inicio,
-#exemplo-diagrama-inicio .circulo-fim { width:31px; height:31px; }
-#exemplo-diagrama .linha1 {border-left-style:solid; min-width:0; height:29px; left:162px; top:100px;}
-#exemplo-diagrama .linha1 .seta {left: -5.5px;}
-#exemplo-requisicao-teste {left: 98px;top: 132px;}
-#exemplo-diagrama .linha2 {border-top-style: solid; width: 167px; left: 226px;top: 151px;}
-#exemplo-diagrama .linha2 .seta {top: -5.5px;}
-#exemplo-release-aprovado {height: 80px;left: 123px;top: 386px;}
-#exemplo-release-aprovado p {top: 23px;left: -3px;}
-#exemplo-diagrama .linha7 {width: 511px; height: 0; left: 219px; top: 425px; border-top-style: solid;}
-#exemplo-diagrama .linha7 .seta {top: -5.8px;}
-#exemplo-diagrama .linha7 p {left: 261px; top: -25px;}
-#exemplo-diagrama .linha8 {min-width: 0;height: 42px;left: 162px;top: 483px;border-left-style: solid;}
-#exemplo-diagrama .linha8 .seta {left: -5.8px;}
-#exemplo-diagrama .linha8 p {left: 6px; top: 7px;}
-#exemplo-corrigir-defeitos {left: 98px;top: 528px;}
-#exemplo-diagrama .linha9 {width: 710px;height: 29px;left: 228px;top: 518px;border-bottom-style: solid;border-right-style: solid;border-bottom-right-radius: 4px;}
-#exemplo-diagrama .linha10 {width: 843px;height: 479px; left:95px; top:50px; border-right-style:solid; border-top-style:solid; border-top-right-radius:4px;}
-#exemplo-diagrama .linha11 {min-width:0; width:44px; height:98px; left:50px; top:50px; 
-                            border-top-style:solid; border-left-style:solid; border-bottom-style:solid; 
-                            border-top-left-radius:4px; border-bottom-left-radius:4px;}
-#exemplo-diagrama .linha11 .seta {bottom: -5.5px;}
-
-#exemplo-time-teste {}
-#exemplo-ciclo-execucao {left: 76px;top: 132px;}
-#exemplo-diagrama .linha3 {border-left-style: solid;min-width: 0;height: 35px;left: 162px;top: 172px;}
-#exemplo-diagrama .linha3 .seta {left: -5.8px;}
-#exemplo-executar-teste {left: 105px;top: 210px;}
-#exemplo-diagrama .linha4 {border-left-style: solid;min-width: 0;height: 39px;left: 162px;top: 250px;}
-#exemplo-diagrama .linha4 .seta {left: -5.8px;}
-#exemplo-enviar-relatorio {left: 101px;top: 292px;}
-#exemplo-diagrama .linha5 {height:14px; left:13px; top:332px; border-right-style:solid; border-bottom-style:solid; border-bottom-right-radius: 4px;}
-#exemplo-diagrama .linha6 {width: 183px; height:19px; left:-158px; top:346px; border-left-style:solid; border-top-style:solid; border-top-left-radius: 4px;}
-#exemplo-diagrama .linha6 .seta {left: -5.8px;}
-
-
-#exemplo-time-configuracao {}
-#exemplo-integrar-release {left: 93px;top: 406px;}
-#exemplo-diagrama .linha12 {min-width: 0; height: 27px; left: 158px; top: 446px; border-left-style: solid; border-top-style: solid; border-top-left-radius: 4px;}
-#exemplo-diagrama .linha12 .seta {left: -5.5px;}
-#exemplo-diagrama-fim {left: 120px;top: 478px;}
-#exemplo-diagrama-fim .circulo-inicio,
-#exemplo-diagrama-fim .circulo-fim { width:31px; height:31px; }
+.plano-acao > h2 {text-align: left;}
+.plano-acao .conteudo {height:550px;margin-top:50px;}
+.plano-acao .conteudo > ul {float:left;width:250px;margin:0;padding:0;font-size:28px;}
+.plano-acao .conteudo > ul li {box-sizing: border-box;height:68.8px;padding-top:20px;list-style-type:none;text-align:left;cursor:pointer;-webkit-transition:all ease-out 200ms;}
+.plano-acao .conteudo > ul li:hover {padding-left:20px;background-color:#ddd;}
+.plano-acao .conteudo article {opacity:0;box-sizing: border-box;position:absolute;width:710px;height:550px;margin-left:250px;padding:20px;text-align:left;font-size:20px;background-color:#ddd;-webkit-transition:all ease-out 200ms;}
+.plano-acao .conteudo article.default {opacity:1;}
+.plano-acao .conteudo article p {margin:0;}
+#plano-acao-me-1-1 section > h2 {font-size:45px;}
+#plano-acao-me-1-2 section > h2 {font-size:31px;}
+#plano-acao-me-2-1 section > h2 {font-size:29px;}
+#plano-acao-me-3-1 section > h2 {font-size:33px;}
+#plano-acao-me-4-6 section > h2 {font-size:52px;}
+#plano-acao-po-6-1 section > h2 {font-size:40px;}
 
 #credits { width: 1200px; padding: 0; }
 #credits .big { font-size: 150px; }
