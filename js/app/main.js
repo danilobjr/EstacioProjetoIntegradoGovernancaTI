@@ -199,4 +199,15 @@ $(function () {
 
     });
 
+    // Plano de Ação - Comportamento
+
+    $('.plano-acao').find('.conteudo > ul li').click(function () {
+        var _this = $(this).addClass('active');
+        _this.siblings().removeClass('active');
+        var topico = _this.attr('class').split(' ')[0];
+        var conteudo = _this.closest('.conteudo');
+        var artigos = conteudo.find('article').removeClass('active');
+        artigos.filter('.' + topico).addClass('active');
+    });
+
 });
