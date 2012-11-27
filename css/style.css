@@ -245,3 +245,64 @@ blockquote .author {
 #credits p.first { margin-bottom: 45px; font-size: 40px; }
 #credits a { font-style: italic; font-weight: bold; text-decoration: underline; }
 
+/* CUBE */
+
+.cubo {position:absolute;left:70px; top:-300px;}
+.cubo p {font-size:16px;}
+
+.topface, .rightface, .leftface{position : absolute ;}
+
+.topface > div {	
+    -webkit-transform: skew(0deg, -30deg) scale(1, 1.16);
+    -moz-transform: skew(0deg, -30deg) scale(1, 1.16);
+    background: -moz-linear-gradient(-90deg,#F8F9F9,#CFE9E9);
+    background: -webkit-gradient(linear, left top, left bottom, from(#F8F9F9), to(#CFE9E9));
+    padding : 10px ;
+    width: 240px;
+    height: 240px;
+    box-sizing: border-box;
+}
+
+.topface {
+    -webkit-transform: rotate(60deg);
+    -moz-transform: rotate(60deg);
+    left: 300px;	
+    padding: 10px;
+    top : 50px ;
+}
+
+.rightface > div {	
+    -webkit-transform: skew(0deg, -30deg) scale(1, 1.16);
+    -moz-transform: skew(0deg, -30deg) scale(1, 1.16);
+    background: -moz-linear-gradient(#7DBBD8,#4B6A74);
+    background: -webkit-gradient(linear, left top, left bottom, from(#7DBBD8), to(#4B6A74));
+    padding : 10px ;
+    width: 240px;
+    height: 240px;
+    box-sizing: border-box;
+}
+
+.rightface {
+    left: 420px;	
+    padding: 10px;
+    top : 257px ;
+}
+
+.leftface > div {	
+    -webkit-transform: skew(0deg, 30deg) scale(1, 1.16);
+    -moz-transform: skew(0deg, 30deg) scale(1, 1.16);
+    background: -moz-linear-gradient(-60deg,#7DBBD8,#7DBBD8);
+    background: -webkit-gradient(linear, left top, left bottom, from(#7DBBD8), to(#7DBBD8));
+    padding : 10px ;
+    width: 240px;
+    height: 240px;
+    box-sizing: border-box;
+}
+
+.leftface {
+    left: 180px;	
+    padding: 10px;
+    top : 258px ;
+}
+
+.leftface > div:hover, .rightface > div:hover, .topface > div:hover {background : #fff;color : #7DBBD8 ;} 
