@@ -197,12 +197,12 @@ div.active {z-index:1;}
 #resultados-po-titulo { margin-top: 100px; font-size: 65px; }
 #resultados-ai-titulo { margin-top: 100px; font-size: 67px; }
 #resultados-ds-titulo { margin-top: 100px; font-size: 88px; }
-#resultados-me-titulo { margin-top: 100px; font-size: 75px; }
+#resultados-me-titulo { margin-top: 100px; font-size: 67px; }
 
 #plano-acao {font-size: 148px;}
 #plano-acao span {float:left;}
 #plano-acao-de {margin-top:50px;font-size:30px;}
-#plano-acao-dominio > div {font-size: 60px;}
+#plano-acao-dominio > div {font-size: 56px;}
 
 .plano-acao > h2 {text-align:left;line-height:1;}
 .plano-acao .conteudo {height:550px;margin-top:50px;}
@@ -264,6 +264,8 @@ div.active {z-index:1;}
 /* TABELA - CRONOGRAMA */
 
 #consideracoes-cronograma .timeline-container {margin-top:60px;}
+#consideracoes-cronograma .timeline-slider table thead tr,
+#consideracoes-cronograma .timeline-legend table thead tr {height:45px;background-color:rgba(0,0,0,.1);}
 #crono-treinamento {width:53px;margin-left:55px;}
 #crono-me11 {width:109px;margin-left:113px;}
 #crono-me12 {width:331px;margin-left:224px;}

@@ -1,8 +1,8 @@
 .timeline-container {}
 .timeline-legend {float:left;}
 .timeline-legend table {width: 294px;border-right:2px solid rgba(0, 0, 0, .2);}
-.timeline-legend table thead {border-bottom: 5px solid transparent;}
-.timeline-legend table thead tr {height:45px; background-color:rgba(0, 0, 0, .1);}
+.timeline-legend table thead {border-bottom: 4px solid transparent;}
+.timeline-legend table thead tr {height:45px; background-color:rgba(255, 255, 255, .7);}
 .timeline-legend table thead tr th {height:28px;font-size: 18px;text-align: left;font-weight: normal;text-transform: uppercase;padding-left:4px;}
 .timeline-legend table tbody tr {height:45px;cursor:default;}
 .timeline-legend table tbody tr:hover td {background-color:rgba(96, 185, 251, 0.70);}
@@ -10,8 +10,8 @@
 .timeline-content {float:left; position:relative; width:666px; overflow:hidden;}
 .timeline-slider {position:relative; width:1440px;}
 .timeline-slider table {}
-.timeline-slider table thead {border-bottom: 5px solid transparent;}
-.timeline-slider table thead tr {height:45px;background-color:rgba(0, 0, 0, .1);}
+.timeline-slider table thead {border-bottom: 4px solid transparent;}
+.timeline-slider table thead tr {height:45px;background-color:rgba(255, 255, 255, .7);}
 .timeline-slider table thead tr th {padding:8px 0; font-weight: normal;text-transform: uppercase;font-size: 18px;width: 111px;text-align: center;cursor:default;}
 /*.timeline-slider table thead tr th:hover {}*/
 .timeline-slider table tbody {}
