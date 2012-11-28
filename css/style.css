@@ -208,7 +208,7 @@ blockquote .author {
 .plano-acao .conteudo > ul li {box-sizing: border-box;height:68.8px;padding-top:20px;list-style-type:none;text-align:left;cursor:pointer;-webkit-transition:all ease-out 200ms;}
 .plano-acao .conteudo > ul li:hover, .plano-acao .conteudo > ul li.active {padding-left:20px;background-color:#ddd;background-color:rgba(96, 185, 251, 0.70)}
 #plano-acao-po-6-1 .plano-acao .conteudo > ul li:hover, 
-#plano-acao-po-6-1 .plano-acao .conteudo > ul li.active {padding-left:20px;background-color:#ddd;background-color:rgba(255, 106, 0, 0.70);;}
+#plano-acao-po-6-1 .plano-acao .conteudo > ul li.active {padding-left:20px;background-color:#ddd;background-color:rgba(255, 106, 0, 0.70);}
 .plano-acao .conteudo article {opacity:0;box-sizing: border-box;position:absolute;width:710px;height:550px;margin-left:250px;padding:20px;text-align:left;font-size:20px;background-color:#ddd;overflow:auto;-webkit-transition:all ease-out 200ms;}
 .plano-acao .conteudo article.default p {position: relative;top: 45%;text-align: center;font-size: 26px;}
 .plano-acao .conteudo article.active {opacity:1;z-index:1;background-color:rgba(96, 185, 251, 0.70);}
@@ -250,6 +250,10 @@ blockquote .author {
 .cubo {position:absolute;left:70px; top:-300px;}
 .cubo p {font-size:16px;}
 
+.face {display: -webkit-box;-webkit-box-orient: vertical;}
+.face > div {-webkit-box-flex: 1;display: -webkit-box;-webkit-box-align: center;-webkit-box-pack: center;cursor:default;}
+.face > div:hover {background-color:rgba(255, 106, 0, 0.70);}
+.face p {margin:0;}
 .topface, .rightface, .leftface{position : absolute ;}
 
 .topface > div {	
@@ -305,4 +309,11 @@ blockquote .author {
     top : 258px ;
 }
 
-.leftface > div:hover, .rightface > div:hover, .topface > div:hover {background : #fff;color : #7DBBD8 ;} 
+.topface:hover span {left:-135px; opacity:1;}
+.rightface:hover span {bottom:-20px; opacity:1;}
+.leftface:hover span {bottom:-20px; opacity:1;}
+
+.face span {opacity:0;-webkit-transition:all ease-in-out 200ms;}
+.topface span {position: absolute;top: 110px;left: -130px;font-size: 20px;font-weight:bold; -webkit-transform: rotateZ(-90deg);}
+.rightface span {position: absolute;bottom: -15px;left: 50px;font-size: 20px;font-weight:bold; }
+.leftface span {position: absolute;bottom: -15px;left: 35px;font-size: 20px;font-weight:bold; }

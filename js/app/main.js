@@ -1,6 +1,6 @@
 $(function () {
 
-    var poChart = new Highcharts.Chart({
+    window.poChart = new Highcharts.Chart({
 	            
         chart: {
             renderTo: 'grafico-po',
