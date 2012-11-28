@@ -1,0 +1,158 @@
+@-webkit-keyframes explicacao-conjunto {
+    0% { opacity: 0; left: 100px; }
+    15% { opacity: 1; left: 20px; }    
+    90% { opacity: 1; left: 20px; }
+    95% { opacity: 0; }
+    100% { left: -60px; }
+} 
+
+@-webkit-keyframes explicacao-simbolos {
+    0% { opacity: 0; left: 100px; }
+    15% { opacity: 1; left: 20px; }    
+    90% { opacity: 1; left: 20px; }
+    95% { opacity: 0; }
+    100% { left: -60px; }
+} 
+
+@-webkit-keyframes explicacao-interligados {
+    0% { opacity: 0; left: 100px; }
+    15% { opacity: 1; left: 20px; }    
+    90% { opacity: 1; left: 20px; }
+    95% { opacity: 0; }
+    100% { left: -60px; }
+} 
+
+@-webkit-keyframes explicacao-sequencia-logica {
+    0% { opacity: 0; left: 100px; }
+    15% { opacity: 1; left: 20px; }    
+    90% { opacity: 1; left: 20px; }
+    95% { opacity: 0; }
+    100% { left: -60px; }
+} 
+
+@-webkit-keyframes explicacao-simbolos-simbolo-oval {  
+    0% { opacity: 0; left: 540px; top: 80px; -webkit-transform: scale(.95); }
+    7% { opacity: 1; left: 520px; top: 80px; -webkit-transform: scale(1); }
+    47% { opacity: 1; left: 520px; top: 80px; -webkit-transform: scale(1); }
+    57% { opacity: 1; left: 570px; top: -40px; -webkit-transform: scale(1); }
+    97% { opacity: 1; left: 570px; top: -40px; -webkit-transform: scale(1); }
+    100% { opacity: 0; left: 590px; top: -40px; -webkit-transform: scale(.9); }
+}
+
+@-webkit-keyframes explicacao-simbolos-simbolo-retangulo {  
+    0% { opacity: 0; left: 300px; top: 80px; -webkit-transform: scale(.95); }
+    7% { opacity: 1; left: 320px; top: 80px; -webkit-transform: scale(1); }
+    47% { opacity: 1; left: 320px; top: 80px; -webkit-transform: scale(1); }
+    57% { opacity: 1; left: 270px; top: -40px; -webkit-transform: scale(1); }
+    97% {opacity: 1; left: 270px; top: -40px; -webkit-transform: scale(1);}
+    100% {opacity: 0; left: 240px; top: -40px; -webkit-transform: scale(.9);}
+}
+
+@-webkit-keyframes explicacao-simbolos-simbolo-losango {  
+    0% { opacity: 0; top: -80px; -webkit-transform: scale(.95) rotateZ(45deg); }
+    7% { opacity: 1; top: -70px; -webkit-transform: scale(1) rotateZ(45deg); }
+    47% { opacity: 1; top: -70px; -webkit-transform: scale(1) rotateZ(45deg); }
+    57% { opacity: 1; top: 100px; -webkit-transform: scale(1) rotateZ(45deg); }
+    97% {opacity: 1;top: 100px; -webkit-transform: scale(1) rotateZ(45deg);}
+    100% {opacity: 0;top: 130px; -webkit-transform: scale(.9) rotateZ(45deg);}
+}
+
+@-webkit-keyframes explicacao-simbolos-simbolo-linha {  
+    0% { opacity: 0; -webkit-transform: scale(.95); }
+    15% { opacity: 1; -webkit-transform: scale(1); }
+    95% { opacity: 1; -webkit-transform: scale(1); }
+    100% { opacity: 0; -webkit-transform: scale(.9); }
+}
+
+@-webkit-keyframes explicacao-diagrama-simbolo-inicio {  
+    0% { opacity: 0; -webkit-transform: scale(.9); }
+    3% { opacity: 1; -webkit-transform: scale(1.1); }
+    6% { opacity: 1; -webkit-transform: scale(1); }
+    90% { opacity: 1; -webkit-transform: scale(1); }
+    100% { opacity: 0; -webkit-transform: scale(.9); }
+}
+
+@-webkit-keyframes explicacao-diagrama-simbolo-inicio-simbolo {  
+    0% { opacity: 0; -webkit-transform: scale(.9); }
+    3% { opacity: 1; -webkit-transform: scale(1.1); }
+    6% { opacity: 1; -webkit-transform: scale(1); }
+    90% { opacity: 1; -webkit-transform: scale(1); }
+    100% { opacity: 0; -webkit-transform: scale(.9); }
+}
+
+@-webkit-keyframes explicacao-diagrama-simbolo-linha1 {  
+    0% { opacity: 0; -webkit-transform: scale(.95); }
+    5% { opacity: 1; -webkit-transform: scale(1); }
+    97% { opacity: 1; -webkit-transform: scale(1); }
+    100% { opacity: 0; -webkit-transform: scale(.9); }
+}
+
+@-webkit-keyframes explicacao-diagrama-simbolo-retangulo1 {  
+    0% { opacity: 0; -webkit-transform: scale(.95); }
+    5% { opacity: 1; -webkit-transform: scale(1); }
+    97% { opacity: 1; -webkit-transform: scale(1); }
+    100% { opacity: 0; -webkit-transform: scale(.9); }
+}
+
+@-webkit-keyframes explicacao-diagrama-simbolo-linha2 {  
+    0% { opacity: 0; -webkit-transform: scale(.95); }
+    5% { opacity: 1; -webkit-transform: scale(1); }
+    97% { opacity: 1; -webkit-transform: scale(1); }
+    100% { opacity: 0; -webkit-transform: scale(.9); }
+}
+
+@-webkit-keyframes explicacao-diagrama-simbolo-losango {  
+    0% { opacity: 0; -webkit-transform: scale(.95) rotateZ(45deg); }
+    5% { opacity: 1; -webkit-transform: scale(1) rotateZ(45deg); }
+    97% { opacity: 1; -webkit-transform: scale(1) rotateZ(45deg); }
+    100% { opacity: 0; -webkit-transform: scale(.9) rotateZ(45deg); }
+}
+
+@-webkit-keyframes explicacao-diagrama-simbolo-linha3 {  
+    0% { opacity: 0; -webkit-transform: scale(.95); }
+    5% { opacity: 1; -webkit-transform: scale(1); }
+    97% { opacity: 1; -webkit-transform: scale(1); }
+    100% { opacity: 0; -webkit-transform: scale(.9); }
+}
+
+@-webkit-keyframes explicacao-diagrama-simbolo-linha4 {  
+    0% { opacity: 0; -webkit-transform: scale(.95); }
+    5% { opacity: 1; -webkit-transform: scale(1); }
+    97% { opacity: 1; -webkit-transform: scale(1); }
+    100% { opacity: 0; -webkit-transform: scale(.9); }
+}
+
+@-webkit-keyframes explicacao-diagrama-simbolo-retangulo2 {  
+    0% { opacity: 0; -webkit-transform: scale(.95); }
+    5% { opacity: 1; -webkit-transform: scale(1); }
+    97% { opacity: 1; -webkit-transform: scale(1); }
+    100% { opacity: 0; -webkit-transform: scale(.9); }
+}
+
+@-webkit-keyframes explicacao-diagrama-simbolo-linha5 {  
+    0% { opacity: 0; -webkit-transform: scale(.95); }
+    5% { opacity: 1; -webkit-transform: scale(1); }
+    97% { opacity: 1; -webkit-transform: scale(1); }
+    100% { opacity: 0; -webkit-transform: scale(.9); }
+}
+
+@-webkit-keyframes explicacao-diagrama-simbolo-fim {  
+    0% { opacity: 0; -webkit-transform: scale(.9); }
+    3% { opacity: 1; -webkit-transform: scale(1.1); }
+    6% { opacity: 1; -webkit-transform: scale(1); }
+    90% { opacity: 1; -webkit-transform: scale(1); }
+    100% { opacity: 0; -webkit-transform: scale(.9); }
+}
+
+@-webkit-keyframes explicacao-diagrama-simbolo-fim-simbolo {  
+    0% { opacity: 0; -webkit-transform: scale(.9); }
+    3% { opacity: 1; -webkit-transform: scale(1.1); }
+    6% { opacity: 1; -webkit-transform: scale(1); }
+    90% { opacity: 1; -webkit-transform: scale(1); }
+    100% { opacity: 0; -webkit-transform: scale(.9); }
+}
+
+@-webkit-keyframes track {  
+    from { top:-50px; }
+    to { top:1000px; }
+}
