@@ -210,4 +210,51 @@ $(function () {
         artigos.filter('.' + topico).addClass('active');
     });
 
+    // Tabela Cronograma - Slider
+
+    var semestre = 1;
+    var _slider = $('#consideracoes-cronograma .timeline-slider');
+
+    $('.timeline-control-left').click(function () {
+        if (semestre === 1) return;
+
+        _slider.animate({
+            left: '+=333px'
+        }, 400);
+
+        semestre -= 1;
+    });
+    $('.timeline-control-right').click(function () {
+        if (semestre === 3) return;
+
+        _slider.animate({
+            left: '-=333px'
+        }, 400);
+
+        semestre += 1;
+    });
+
+    var linhasTabelaDeLegenda = $('#consideracoes-cronograma .timeline-legend table tbody tr');
+    var linhasTabelaDoSlider = $('#consideracoes-cronograma .timeline-slider table tbody tr');
+
+    $('.timeline-slider table tbody tr')
+        .mouseenter(function () {
+            var indice = $(this).index();
+            linhasTabelaDeLegenda.eq(indice).find('td').css('background-color', 'rgba(96, 185, 251, 0.70)');
+        })
+        .mouseleave(function () {
+            var indice = $(this).index();
+            linhasTabelaDeLegenda.eq(indice).find('td').removeAttr('style');
+        });
+
+    $('.timeline-legend table tbody tr')
+        .mouseenter(function () {
+            var indice = $(this).index();
+            linhasTabelaDoSlider.eq(indice).find('td').css('background-color', 'rgba(96, 185, 251, 0.70)');
+        })
+        .mouseleave(function () {
+            var indice = $(this).index();
+            linhasTabelaDoSlider.eq(indice).find('td').removeAttr('style');
+        });
+
 });

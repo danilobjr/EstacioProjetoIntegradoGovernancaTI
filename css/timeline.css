@@ -2,31 +2,34 @@
 .timeline-legend {float:left;}
 .timeline-legend table {width: 294px;border-right:2px solid rgba(0, 0, 0, .2);}
 .timeline-legend table thead {border-bottom: 5px solid transparent;}
-.timeline-legend table thead tr {background-color:rgba(255, 255, 255, .6);}
+.timeline-legend table thead tr {height:45px; background-color:rgba(0, 0, 0, .1);}
 .timeline-legend table thead tr th {height:28px;font-size: 18px;text-align: left;font-weight: normal;text-transform: uppercase;padding-left:4px;}
 .timeline-legend table tbody tr {height:45px;cursor:default;}
-.timeline-legend table tbody tr td {height:45px;padding:0 !important;font-size:14px;text-align:left;border-bottom: 2px solid transparent;padding-left:4px !important;}
+.timeline-legend table tbody tr:hover td {background-color:rgba(96, 185, 251, 0.70);}
+.timeline-legend table tbody tr td {position:relative; height:45px;padding:0 !important;font-size:14px;text-align:left;border-bottom: 2px solid transparent;padding-left:4px !important;}
 .timeline-content {float:left; position:relative; width:666px; overflow:hidden;}
-.timeline-slider {width:1440px;}
+.timeline-slider {position:relative; width:1440px;}
 .timeline-slider table {}
 .timeline-slider table thead {border-bottom: 5px solid transparent;}
-.timeline-slider table thead tr {}
-.timeline-slider table thead tr th {padding:8px 0; font-weight: normal;text-transform: uppercase;font-size: 18px;width: 111px;text-align: center;cursor:default; background-color:rgba(255, 255, 255, .6);}
+.timeline-slider table thead tr {height:45px;background-color:rgba(0, 0, 0, .1);}
+.timeline-slider table thead tr th {padding:8px 0; font-weight: normal;text-transform: uppercase;font-size: 18px;width: 111px;text-align: center;cursor:default;}
 /*.timeline-slider table thead tr th:hover {}*/
 .timeline-slider table tbody {}
 .timeline-slider table tbody tr {height:45px;}
-.timeline-slider table tbody tr:hover {background-color:rgba(96, 185, 251, 0.70);}
+.timeline-slider table tbody tr:hover td {background-color:rgba(96, 185, 251, 0.70);}
 .timeline-slider table tbody tr td {position:relative; height:45px;padding:0 !important;border-bottom: 2px solid transparent;}
 .timeline {position:absolute; box-sizing:border-box; height:45px; top:0; cursor:pointer;background-color:#444;}
-.timeline:after {position:absolute; content:' '; box-sizing:border-box; width:100%; height:45px; background-color:black;border-left: 2px solid white;border-right: 2px solid white;z-index:2;opacity:0;-webkit-transition:all ease-out 200ms 200ms;}
+.timeline:after {position:absolute; content:' '; box-sizing:border-box; width:100%; height:45px; left:0; background-color:black;border-left: 2px solid white;border-right: 2px solid white;z-index:2;opacity:0;-webkit-transition:all ease-out 200ms 200ms;}
 /*.timeline:hover {border-left: 2px solid white;border-right: 2px solid white;}*/
-/*.timeline:hover:after {opacity:1;z-index:1;}
+
+.timeline:hover:after {opacity:1;z-index:1;}
 .timeline:hover .timeline-tooltip {opacity:1;}
 .timeline:hover .timeline-tooltip-start {left: -60px;}
 .timeline:hover .timeline-tooltip-end {right: -60px;}
 .timeline:hover .arrow {opacity: 1;}
 .timeline:hover .arrow-left {left: -7px;}
-.timeline:hover .arrow-right {right: -7px;}*/
+.timeline:hover .arrow-right {right: -7px;}
+
 article.active .timeline:after {opacity:1;z-index:1;}
 article.active .timeline .timeline-tooltip {opacity:1;}
 article.active .timeline .timeline-tooltip-start {left: -60px;}
@@ -34,17 +37,19 @@ article.active .timeline .timeline-tooltip-end {right: -60px;}
 article.active .timeline .arrow {opacity: 1;}
 article.active .timeline .arrow-left {left: -7px;}
 article.active .timeline .arrow-right {right: -7px;}
-.timeline-tooltip {position:absolute; padding: 0 3px; top:11px; font-size:16px; opacity:0; background-color:white; z-index:-1; -webkit-transition:all ease-out 200ms 600ms;}
+.timeline-tooltip {position:absolute; padding: 0 3px; top:11px; font-size:16px; opacity:0; background-color:white; z-index:1; -webkit-transition:all ease-out 200ms 600ms;}
 .timeline-tooltip-start {position:absolute;left:-30px;}
 .timeline-tooltip-end {position:absolute;right:-30px;}
-.timeline-tooltip p {margin:0 !important;}
-.arrow {position:absolute;top:14px;opacity:0; z-index:-1; -webkit-transition:all ease-out 200ms 400ms;}
+.timeline-tooltip p {margin:0 !important;line-height: 1.3;}
+.arrow {position:absolute;top:14px;opacity:0; z-index:1; -webkit-transition:all ease-out 200ms 400ms;}
 .arrow-left {width: 0;height: 0;left:0; border-top: 7px solid transparent;border-right: 7px solid white;border-bottom: 7px solid transparent;}
 .arrow-right {width: 0;height: 0;right:0; border-top: 7px solid transparent;border-left: 7px solid white;border-bottom: 7px solid transparent;}
 
 /* TIMELINE - CONTROLS */
 
-.timeline-slider-controls {}
-.timeline-control {padding: 0;margin: 0;line-height: 12px;background-color: rgba(96, 185, 251, 0.70);}
-.timeline-control-left {}
-.timeline-control-right {}
+.timeline-slider-controls {display: -webkit-box;-webkit-box-pack: center;margin: 30px 0 10px 0;}
+.timeline-control {position:relative; width: 60px;height: 48px;padding: 0;margin: 0; color: #555; cursor:pointer; background-color: rgba(96, 185, 251, 0.70);border-radius: 3px;box-shadow: 2px 2px 6px #555;}
+.timeline-control:hover {color:black; background-color: rgba(96, 185, 251, 0.9);box-shadow: 2px 2px 6px #333;}
+.timeline-control:active {top:1px;box-shadow: 1px 1px 5px #333;}
+.timeline-control-left {margin-right:10px;}
+.timeline-control-right {margin-left:10px;}

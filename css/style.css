@@ -77,6 +77,8 @@ blockquote .author {
     font-size: 36px;
 }
 
+div.active {z-index:1;}
+
 .img-wrap {	margin: 0 auto; }
 .img-inline { display: inline-block; padding: 12px 3px; }
 .img-link {	text-decoration: none; }
@@ -279,7 +281,7 @@ blockquote .author {
 /* CUBE */
 
 .cubo {position:absolute;left:70px; top:-300px;}
-.cubo p {font-size:16px;}
+.cubo p {font-size:16px;text-transform:uppercase;}
 
 .face {display: -webkit-box;-webkit-box-orient: vertical;}
 .face > div {-webkit-box-flex: 1;display: -webkit-box;-webkit-box-align: center;-webkit-box-pack: center;cursor:default;}
