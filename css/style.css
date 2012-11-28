@@ -220,14 +220,33 @@ blockquote .author {
 .plano-acao .conteudo article ul {list-style-type:myanmar;}
 .plano-acao .conteudo article ul li {height:24px;}
 .plano-acao .conteudo .quanto p:not(.exception) {font-size: 50px;text-align: center;position: relative;top: 40%;}
-/*
-#plano-acao-me-1-1 section > h2 {font-size:45px;}
-#plano-acao-me-1-2 section > h2 {font-size:31px;}
-#plano-acao-me-2-1 section > h2 {font-size:29px;}
-#plano-acao-me-3-1 section > h2 {font-size:33px;}
-#plano-acao-me-4-6 section > h2 {font-size:52px;}
-#plano-acao-po-6-1 section > h2 {font-size:40px;}
-    */
+
+/* TABELAS - PLANO DE AÇÃO */
+#me1-1 {width:109px;margin-left:113px;}
+#me1-2 {width:331px;margin-left:224px;}
+#me2-1 {width:109px;margin-left:224px;}
+#me3-1 {width:27px; margin-left:335px;}
+#me4-6 {width:111px;margin-left:333px;}
+#po6-1 {width:111px;margin-left:444px;}
+
+/* TABELA - INVESTIMENTO */
+
+.quanto table {width:100%;}
+.quanto table thead {}
+.quanto table thead tr {height:50px;background-color:rgba(255, 255, 255, .5);}
+.quanto table thead tr th {text-align:right;font-weight:normal; text-transform: uppercase; padding: 0 3px;border-bottom: 3px solid rgba(255, 255, 255, .8);}
+.quanto table thead tr th:first-child {text-align:left;}
+.quanto table tbody {}
+.quanto table tbody tr {height:40px;-webkit-transition: all ease 150ms;}
+.quanto table tbody tr:hover {color:whitesmoke; background-color:rgba(0, 0, 0, .3);}
+.quanto table tbody tr td {text-align:right;padding: 0 3px;}
+.quanto table tbody tr td:first-child {text-align:left;}
+.quanto table tfoot {}
+.quanto table tfoot tr {height:50px;}
+.quanto table tfoot tr td {padding: 0 3px;font-weight: bold; text-align:right;border-top:2px solid rgba(255, 255, 255, .3);}
+
+.quanto table tr {cursor:default;}
+
 #consideracoes-titulo {font-size:113px;}
 #consideracoes-organizacao-titulo {font-size:136px;}
 #consideracoes-pequeno-porte-titulo {font-size:118px;}
@@ -237,7 +256,19 @@ blockquote .author {
 #consideracoes-dominio-titulo {font-size: 62px;}
 #consideracoes-plano-titulo {font-size: 136px;}
 #consideracoes-plano-de {position: relative;bottom: 34px;font-size: 32px;}
+#consideracoes-cronograma h2 {text-align:left;}
 #consideracoes-investimento-titulo {font-size: 70px;}
+
+/* TABELA - CRONOGRAMA */
+
+#consideracoes-cronograma .timeline-container {margin-top:60px;}
+#crono-treinamento {width:53px;margin-left:55px;}
+#crono-me11 {width:109px;margin-left:113px;}
+#crono-me12 {width:331px;margin-left:224px;}
+#crono-me21 {width:107px;margin-left:557px;}
+#crono-me31 {width:27px; margin-left:666px;}
+#crono-me46 {width:111px;margin-left:666px;}
+#crono-po61 {width:111px;margin-left:777px;}
 
 #credits { width: 1200px; padding: 0; }
 #credits .big { font-size: 150px; }
