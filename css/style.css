@@ -118,8 +118,10 @@ div.active {z-index:1;}
 .seta-esq {left: 0; border-left: 2px solid #777;border-bottom: 2px solid #777;}
 /*.seta-baixo {bottom: 0; border-right: 2px solid #777;border-bottom: 2px solid #777;}*/
 
-.seta-baixo {margin-top:180px;}
-.definicao-icon {margin-left:130px;}
+.definicao-icones {position:relative; display: -webkit-box; width: 600px; left: 50%; margin-left: -300px;}
+.definicao-icones figure {-webkit-box-flex: 1; -webkit-box-align: center; width: 130px;}
+.definicao-icones figure img {height: 80px;}
+.definicao-icones figure figcaption {font-size: 18px;margin-top: 8px; line-height: 20px;}
 .grafico {position:relative;width:650px;left:50%;margin-left:-325px;box-shadow: 0 0 18px black;}
 
 /* COMMON STEP STYLES */
@@ -164,17 +166,10 @@ div.active {z-index:1;}
 
 #definicao-que {font-size: 202px;}
 #definicao-governanca-titulo {font-size: 84px;}
+#it-negocios {margin-top: 140px;}
+#it-negocios span {font-size: 76px;}
 
 #definicao-cobit-titulo {font-size: 170px;}
-
-#combo-text { font-size: 247px; }
-#combo-or { position: relative; left: -20px; }
-#combo-fluid-fixed div { float: left; text-align: center; }
-#combo-plus { width: 10%; font-size: 100px; }
-#combo-fixed, #combo-fluid { width: 45%; }
-#combo-fluid-fixed div .bold { font-size: 63px; width: 100%; }
-#combo-fluid-fixed div .light { font-size: 50px; width: 100%; }
-#combo-fluid .light { letter-spacing: 3px; }
 
 #pronto-e-isso { font-size: 270px; }
 #pronto-ta-entendendo { letter-spacing: 19px; font-size: 73px; position: relative; left: 10px; margin-top: 15px; }
@@ -224,12 +219,14 @@ div.active {z-index:1;}
 .plano-acao .conteudo .quanto p:not(.exception) {font-size: 50px;text-align: center;position: relative;top: 40%;}
 
 /* TABELAS - PLANO DE AÇÃO */
-#me1-1 {width:109px;margin-left:113px;}
-#me1-2 {width:331px;margin-left:224px;}
-#me2-1 {width:109px;margin-left:224px;}
-#me3-1 {width:27px; margin-left:335px;}
-#me4-6 {width:111px;margin-left:333px;}
-#po6-1 {width:111px;margin-left:444px;}
+#treinamento {width:56px;margin-left:54px;}
+#crono-treinamento-exlpicacao {margin-top: 120px;}
+#me1-1 {width:311px;margin-left:113px;}
+#me1-2 {width:315px;margin-left:120px;}
+#me2-1 {width:102px;margin-left:450px;}
+#me3-1 {width:115px;margin-left:115px;}
+#me4-6 {width:111px;margin-left:225px;}
+#po6-1 {width:105px;margin-left:225px;}
 
 /* TABELA - INVESTIMENTO */
 
@@ -267,12 +264,12 @@ div.active {z-index:1;}
 #consideracoes-cronograma .timeline-slider table thead tr,
 #consideracoes-cronograma .timeline-legend table thead tr {height:45px;background-color:rgba(0,0,0,.1);}
 #crono-treinamento {width:53px;margin-left:55px;}
-#crono-me11 {width:109px;margin-left:113px;}
-#crono-me12 {width:331px;margin-left:224px;}
-#crono-me21 {width:107px;margin-left:557px;}
-#crono-me31 {width:27px; margin-left:666px;}
-#crono-me46 {width:111px;margin-left:666px;}
-#crono-po61 {width:111px;margin-left:777px;}
+#crono-me11 {width:311px;margin-left:118px;}
+#crono-me12 {width:320px;margin-left:450px;}
+#crono-me21 {width:107px;margin-left:777px;}
+#crono-me31 {width:105px;margin-left:118px;}
+#crono-me46 {width:100px;margin-left:228px;}
+#crono-po61 {width:109px;margin-left:890px;}
 
 #credits { width: 1200px; padding: 0; }
 #credits .big { font-size: 150px; }
@@ -282,7 +279,7 @@ div.active {z-index:1;}
 
 /* CUBE */
 
-.cubo {position:absolute;left:70px; top:-300px;}
+.cubo {position:absolute;left:70px; top:-300px;z-index: 2;}
 .cubo p {font-size:16px;text-transform:uppercase;}
 
 .face {display: -webkit-box;-webkit-box-orient: vertical;}
@@ -343,6 +340,10 @@ div.active {z-index:1;}
     padding: 10px;
     top : 258px ;
 }
+
+#cubo-contexto {position: absolute; z-index: 1; display:none;}
+#cubo-contexto div {}
+#cubo-contexto div p {}
 
 .topface:hover span {left:-135px; opacity:1;}
 .rightface:hover span {bottom:-20px; opacity:1;}
